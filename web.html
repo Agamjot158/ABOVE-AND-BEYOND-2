@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Agamjot Singh" />
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	
+	<div class="bg1">
+		<input type="color" id="color1" value="#ff0000">
+		<img src="bg.jpg" class="center">
+	</div>
+
+	<div class="bg2">
+		<input type="color" id="color2" value="#ff0000">
+		<img src="bg.jpg" class="center">
+	</div>
+
+	<div class="bg3">
+		<input type="color" id="color3" value="#ff0000">
+		<img src="bg.jpg" class="center">
+	</div>
+
+	<script>
+		
+		document.getElementById('color1').addEventListener('input', (e)=>{
+			let colValue = e.target.value;
+			document.getElementsByClassName('bg1')[0].style.background = colValue;
+		});
+
+		document.getElementById('color2').addEventListener('input', (e)=>{
+			let colValue = e.target.value;
+			document.getElementsByClassName('bg2')[0].style.background = colValue;
+		});
+
+		document.getElementById('color3').addEventListener('input', (e)=>{
+			let colValue = e.target.value;
+			document.getElementsByClassName('bg3')[0].style.background = colValue;
+		});
+	</script>
+</body>
+</html>
